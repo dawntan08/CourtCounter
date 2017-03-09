@@ -7,6 +7,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    int scoreTeamA = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -14,21 +16,22 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamA(0);
     }
 
-
-
-    // initial req: after click button, score change to 3
-    public void scorePlusThree(View view) {
-        displayForTeamA(3);
+    // add three points for Team A
+    public void addThreeForTeamA(View view) {
+        scoreTeamA = scoreTeamA + 3;
+        displayForTeamA(scoreTeamA);
     }
 
-    // initial req: after click button, score change to 2
-    public void scorePlusTwo(View view) {
-        displayForTeamA(2);
+    // add two points for Team A
+    public void addTwoForTeamA(View view) {
+        scoreTeamA = scoreTeamA + 2;
+        displayForTeamA(scoreTeamA);
     }
 
-    // initial req: after click button, score change to 1
-    public void scorePlusOne(View view) {
-        displayForTeamA(1);
+    // add one points for Team A
+    public void addOneForTeamA(View view) {
+        scoreTeamA++;
+        displayForTeamA(scoreTeamA);
     }
 
     /**

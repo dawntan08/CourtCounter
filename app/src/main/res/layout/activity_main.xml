@@ -28,7 +28,7 @@
         android:text="+3 Points"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:onClick="scorePlusThree"/>
+        android:onClick="addThreeForTeamA"/>
 
     <Button
         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
         android:text="+2 Points"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:onClick="scorePlusTwo"/>
+        android:onClick="addTwoForTeamA"/>
 
     <Button
         android:layout_width="match_parent"
@@ -44,5 +44,5 @@
         android:text="Free Throw"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:onClick="scorePlusOne"/>
+        android:onClick="addOneForTeamA"/>
 </LinearLayout>
